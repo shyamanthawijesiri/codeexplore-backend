@@ -18,7 +18,7 @@ const port=3000;
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
-mongoose.connect('mongodb://localhost:27017/w6', {useNewUrlParser: true},function(err){
+mongoose.connect('mongodb+srv://GeveoAust:geveo1234@freecluster-toxk5.mongodb.net/test?retryWrites=true&w=majority', {useNewUrlParser: true},function(err){
     if(err){
         console.log("Database connecting error "+err)
     }
